@@ -1,0 +1,35 @@
+<html>
+   <head>
+       <script src="https://unpkg.com/vue@2.5.16/dist/vue.js"></script>
+       <style>
+           .fixImageSize{
+             height: 100px;
+             width: 100px;
+           }
+       </style>
+   </head>
+
+   <body>
+
+      <div id="my-app">
+
+          <a :href="ulink" :title="title">{{ name }}</a> <br/>
+          <img :src="imageLink" v-bind:class="{fixImageSize:isActive}">
+
+          <br/>
+
+          <form method="post">
+             <input type="text" v-bind:value="txtName" placeholder="Name">
+             <input type="text" v-bind:value="txtEmail" placeholder="Email">
+             <button type="button" name="button">Submit</button>
+          </form>
+
+          <br/>
+
+<div v-html="htmlContent"></div>
+
+      </div>
+
+      <script src="video-4.js"></script>
+   </body>
+</html>
