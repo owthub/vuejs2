@@ -1,0 +1,43 @@
+<html>
+   <head>
+       <script src="https://unpkg.com/vue@2.5.16/dist/vue.js"></script>
+   </head>
+
+   <body>
+
+      <div id="my-app">
+          <h3>Counter: {{ counter }}</h3>
+          <button type="button" name="button" @click.once="incrementby1">Click + 1</button>
+
+          <br/><br/>
+
+          <a href="https://www.google.com" @click.prevent>Google</a>
+
+          <br/><br/>
+
+          <form class="" action="#" method="post" @submit.prevent>
+            <button type="submit" name="button">Submit</button>
+          </form>
+
+<br/><br/>
+
+<div id="parent-div" @click="submitClick">
+   <button id="child-div" @click.stop="submitClick">Click Me</button>
+</div>
+
+<br/><br/>
+
+<div class="parent-class" @click.capture="parentClass">
+    <button type="button" name="button" @click="btnClick">Click Me Again</button>
+</div>
+
+
+
+
+
+
+      </div>
+
+      <script src="video-8.js"></script>
+   </body>
+</html>
