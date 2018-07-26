@@ -1,0 +1,36 @@
+<html>
+   <head>
+       <script src="vue.js"></script>
+   </head>
+
+   <body>
+
+      <div id="my-app">
+
+    <input type="text" v-model="maths" placeholder="Maths marks">
+    <input type="text" v-model="science" placeholder="Science marks">
+    <input type="text" v-model="english" placeholder="English marks">
+
+    <h3>Total Marks: {{ totalSubjectMarks }}</h3>
+
+
+          {{ runme() }}
+
+<br/><br/>
+
+<input type="text" v-model="meter" placeholder="Enter length in meter">
+
+ <h4>Length in cm : {{ convertToCentimeter }}</h4>
+
+          <br/>
+          <br/>
+          <input type="text" placeholder="Enter First Name" v-model="firstname">
+          <input type="text" placeholder="Enter Last Name" v-model="lastname">
+
+          <h4>Full name: {{ getFullName }}</h4>
+
+      </div>
+
+      <script src="video-11.js"></script>
+   </body>
+</html>
