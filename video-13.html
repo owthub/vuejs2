@@ -1,0 +1,27 @@
+<html>
+   <head>
+       <script src="vue.js"></script>
+   </head>
+
+   <body>
+
+      <div id="my-app">
+         <p v-if="isActive" id="if-p">This is my if statement</p>
+         <p v-else>This is my else statement</p>
+
+         <p v-show="isActive" id="if-show">This is my show statement</p>
+
+<br/>
+        <button type="button" @click="incrmentCountValue">Increment by 1</button>
+        <h4>Count: {{ count }}</h4>
+
+        <p v-if="count == 1 ">This is value = 1</p>
+        <p v-else-if="count == 2">This is value = 2</p>
+        <p v-else-if="count == 3">This is value = 3</p>
+        <p v-else>No value matched</p>
+
+      </div>
+
+      <script src="video-13.js"></script>
+   </body>
+</html>
