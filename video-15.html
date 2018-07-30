@@ -1,0 +1,23 @@
+<html>
+   <head>
+       <script src="vue.js"></script>
+   </head>
+
+   <body>
+
+      <div id="my-app-1">
+          <p>Title: {{ title }}</p>
+          <p>Author Name: {{ author }}</p>
+          <p>{{ secondApp() }}</p>
+          <p>Method from App 2: {{ thirdAppFn() }}</p>
+          <p>Computed from App2: {{ accessComputedApp2() }}</p>
+      </div>
+
+      <div id="my-app-2">
+         <p>Author: {{ author }}</p>
+         <p>{{ secondApp() }}</p>
+      </div>
+
+      <script src="video-15.js"></script>
+   </body>
+</html>
