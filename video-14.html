@@ -1,0 +1,29 @@
+<html>
+   <head>
+       <script src="vue.js"></script>
+   </head>
+
+   <body>
+
+      <div id="my-app">
+          <ul>
+            <li v-for="(student,index) in students">{{ index }}-{{ student }}</li>
+          </ul>
+          <ul>
+            <li v-for="teacher in teachers">
+              {{ teacher.name }} teaches {{ teacher.subject }} from {{ teacher.location.street }}, {{ teacher.location.city }}
+            </li>
+          </ul>
+          <ul>
+            <li v-for="teacher in teachers">
+              {{ teacher.name }} teaches {{ teacher.subject }}
+              <p v-for="(addr,index) in teacher.location">
+                  {{ index }} - {{ addr }}
+              </p>
+            </li>
+          </ul>
+      </div>
+
+      <script src="video-14.js"></script>
+   </body>
+</html>
